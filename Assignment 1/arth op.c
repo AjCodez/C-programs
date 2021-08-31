@@ -7,5 +7,6 @@ void main()
 	printf("Sum = %f\n",a+b);
 	printf("Substraction = %f\n",a-b);
 	printf("multiplication = %f\n",a*b);
-	printf("Division = %f\n",a/b);
+	printf("Division = %f",a/b);
 }
+
