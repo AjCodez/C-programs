@@ -1,0 +1,36 @@
+#include<stdio.h>
+void main()
+{
+int no,i,j,rev,rem,count,b=0,temp;
+scanf("%d",&no);
+for(i=no+1;i<32766;i++)
+{
+temp=i;
+rev=0;
+while(temp!=0)
+{
+rem=temp%10;
+rev=rev*10+rem;
+temp=temp/10;
+}
+if(rev==i)
+{
+count=0;
+for(j=2;j<i;j++)
+{
+if(i%j==0)
+{
+count++;
+break;
+}
+}
+if(count==0)
+{
+printf("%d",i);
+b++;
+}
+}
+if(b>0)
+break;
+}
+}
