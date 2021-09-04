@@ -1,3 +1,5 @@
+//Function with arguments and return value
+
 #include<stdio.h>
 int fact(int a);
 void main()
